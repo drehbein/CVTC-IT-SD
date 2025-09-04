@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&family=Rock+Salt&display=swap');
+
+/* html {
+  font-size: 10 px;
+} */
+
+body {
+  color: green;
+  /* background-color: thistle;
+  background-image: url(images/bGround01.jpg);
+  background-repeat: no-repeat;
+  background-position: center center; */
+  background: thistle url(../images/bGround01.jpg) no-repeat 50% 0%;
+}
+
+/* Select by class name. */
+
+.wrapper {
+  /* color: orange; */
+  /* border: 1px solid red; */
+  width: 960px;
+  /* text-align: justify; */
+  /* Center the box */
+  margin: 0 auto;
+}
+
+#logo1870 {
+  color: #76623c;
+  font-family: 'Rock Salt', Papyrus, Arial, sans-serif; font-size: 8em;
+  font-size: 8rem;
+  font-weight: 300;
+  display: inline;
+}
+
+header > h2 {
+  color: rgb(100, 100, 100);
+  background-color: rgb(150, 150, 150);
+  text-indent: 50px;
+  letter-spacing: 10px;
+  font-family: Oxygen, Arial;
+  padding-bottom: 6px;
+  /* text-shadow: horizontalOffset verticalOffset blur color; */
+  text-shadow: 2px 2px 4px #b0d700;
+}
+
+nav ul {
+  list-style-type: none;
+  /* border: 1px solid red; */
+}
+
+nav > ul > li {
+  display: inline;
+  font-size: 1.2em;
+}
+
+nav li > a {
+  
+}
