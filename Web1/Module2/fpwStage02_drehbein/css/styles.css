@@ -54,5 +54,34 @@ nav > ul > li {
 }
 
 nav li > a {
-  
+  color: #222;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #bbb090;
+}
+
+nav li > a:hover {
+  text-decoration: underline;
+}
+
+/* dt:first-child {
+  color: red;
+}
+
+dd:nth-child(2) {
+  color: orange;
+}
+
+nav:first-child {
+  background-color: #433c20;
+} */
+
+#bottomNav {
+  background-color: #433c20;
+}
+
+#bottomNav li,
+#bottomNav a {
+  color: #bbb090;
+  text-shadow: none;
+  font-size: 1em;
 }
