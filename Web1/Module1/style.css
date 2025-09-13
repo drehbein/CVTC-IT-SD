@@ -1,0 +1,19 @@
+h1 {
+  color: #0000ff;
+}
+
+#KatHeader {
+  color: pink;
+  cursor: url(duck.png), alias;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+#duck {
+  width: 15%;
+  height: auto;
+  z-index: 9999;
+  position: fixed;
+}
