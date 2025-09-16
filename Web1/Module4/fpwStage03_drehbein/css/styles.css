@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&family=Rock+Salt&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #444;
+  background: rgba(88, 58, 18, .6) url(../images/bGround01.jpg) no-repeat 50% 0%;
+  font-family: Arial, 'Rock Salt', Impact, Verdana, sans-serif;
+  font-size: .875rem;
+}
+
+.wrapper {
+  width: 60rem;
+  margin: 0 auto;
+}
+
+/* Select diary image  by attribute value (case insensitive because of i) */
+/* header > a > img { */
+header img[src*="diary" i] {
+  /* border: 1px solid blue; */
+  float: left;
+}
+
+#logo1870 {
+  color: #76623c;
+  font-family: Papyrus, 'Rock Salt', Arial, sans-serif;
+  font-size: 8em;
+  font-weight: 300;
+  /* display: inline; */
+  margin-left: 5em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline;
+  font-size: 1.2em;
+}
+
+nav li > a {
+  color: #222;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #bbb090;
+  font-size: 1.1em;
+}
+
+nav li > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  clear: left;  /* clear the float */
+}
+
+#journal img {
+  float: right;
+}
+
+.motd {
+  /* border: 1px solid red; */
+  /* width: 80%;
+  margin: 0 auto; */
+  margin-top: .313rem;
+  margin-left: .313rem;
+  border-left: 1px dotted #76623c;
+  border-right: 1px dotted #76623c;
+  padding-left: .313rem;
+  font-family: Tahoma, 'Trebuchet MS', sans-serif;
+  font-size: .875rem;
+  line-height: 1rem;
+}
+
+.motd h4 {
+  /* border: 1px solid blue; */
+  text-align: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+.motd p {
+  line-height: 1.6em;
+}
+
+/* #primaryPic > img */
+img[alt$="Artilleryman - 1870"] {
+  /* border: 1px solid yellow; */
+  float: left;
+  opacity: .35;
+  transform: scaleX(-1);
+}
+
+.primaryContent section:nth-child(4) {
+  /* border: 1px solid red; */
+  margin-top: 3.75rem;
+}
+
+#bottomNav {
+  background-color: #433c20;
+  margin-top: .4em;
+}
+
+#bottomNav li, 
+#bottomNav a {
+  color: #bbb090;
+  text-shadow: none;
+  font-size: 1em;
+}
+
+#footerInfo {
+  /* border: 1px solid orange; */
+  margin-left: 6.25rem;
+}
+
+#footerInfo a[href^="mailto:"] {
+  float: right;
+  margin-right: .8em;
+  color: #76623c;
+  text-decoration: none;
+  font-size: larger;
+}
+
+#footerInfo a[href^="mailto:"]:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
