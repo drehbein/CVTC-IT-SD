@@ -11,73 +11,98 @@
 
   <div class="wrapper">
 
-    <header>
+    <header id="top">
+      <div id="artilleryPic">
+        <img src="images/PrussianGuns.jpg" alt="Prussian Artillery - 1870">
+      </div>
+      <img src="images/Logo.png" alt="1870 Logo" id="logo1870">
       <a href="http://codrops.com" target="_blank"><img src="images/Diary01_with_tapedPic.png" alt="1870 Diary"></a>
-      <h1 id="logo1870">1870</h1>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="theWar/theWar.html">The War</a> | </li>
-        <li><a href="theDepot/theDepot.html">The Depot</a> | </li>
-        <li><a href="gaming1870/gaming1870.html">Gaming 1870</a> | </li>
-        <li><a href="theArt/theArt.html">The Art</a> | </li>
-        <li><a href="theLibrary/theLibrary.html">The Library</a></li>
-      </ul>
-    </nav>
+    <div id="twoColumnWrapper">
 
-    <!-- Main content of the page -->
-    <main class="primaryContent">
-
-      <aside id="journal">
-        <a href="#"><img src="images/Journal01.png" alt="The 1870 Journal Newsletter"></a>
-      </aside>
-      
-      <section class="motd">
-        <h4>Why 1870?</h4>
-        <p>Large, colorfully uniformed armies with diverse types of units.</p>
-        <p>Large-scale battles, many of which were very close-run affairs with lots of "what-if" scenarios.</p>
-        <p>The fall of one empire.  The rise of another.</p>
-        <p>Seeds sown of a future, yet even more terrible war.</p>
-      </section>
-
-      <aside id="primaryPic">
-        <img src="images/primaryPic.png" alt="French Artilleryman - 1870">
+      <!-- First Column -->
+      <aside id="secondaryContainer">
+        <a href="#"><img src="images/Journal01.png" alt="The 1870 Journal Newsletter" id="journal"></a>
       </aside>
 
-      <section>
-        <br>
-        <h3>Today's Snapshot</h3>
-        <blockquote>
-          "General Frossard, undefeated, thought he had been defeated, and so he was.  General von Zastrow was half-defeated, but refused to be so was not.  This was the secret to the Prussian victory. "
-          <br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <em>French historian</em>
-        </blockquote>
-        <br>
-      </section>
-    </main>
+      <!-- Second column -->
+      <main class="mainContentWrapper">
 
-    <footer>
-      <nav id="bottomNav">
-        <ul>
-          <li><a href="theWar/theWar.html">The War</a> | </li>
-          <li><a href="theDepot/theDepot.html">The Depot</a> | </li>
-          <li><a href="gaming1870/gaming1870.html">Gaming 1870</a> | </li>
-          <li><a href="theArt/theArt.html">The Art</a> | </li>
-          <li><a href="theLibrary/theLibrary.html">The Library</a></li>
-        </ul>
-      </nav>
+        <nav id="topNav">
+          <ul>
+            <li><a href="theWar/theWar.html">The War</a></li>
+            <li><a href="theDepot/theDepot.html">The Depot</a></li>
+            <li><a href="gaming1870/gaming1870.html">Gaming 1870</a></li>
+            <li><a href="theArt/theArt.html">The Art</a></li>
+            <li><a href="theLibrary/theLibrary.html">The Library</a></li>
+          </ul>
+        </nav>
 
-      <!-- Copyright and contact email -->
-      <div id="footerInfo" class="footerInfo">
-        <br><br>
-        <small>
-          &copy; 2025 Devion Rehbein &nbsp; All rights reserved
+        <div class="main">
+          <div id="navDescription">
+             <section id="defaultTab" class="tabDescription">
+              <img src="images/navPhotos/default_polaroidSmall.png" alt="Default 1870 Polaroid Image">
+              <h3>The Franco-Prussian War</h3>
+              <p>1870 was a disaster for France causing that action tp thirst for a chance to avenge their territorial losses. On the other side of the hill, the war led to the establishment of a united Gernam enpire headed by Prussia.</p>
+            </section>
 
-          <a href="mailto:drehbein@student.cvtc.edu">Send a dispatch</a>
-        </small>
-      </div> 
-    </footer>
+            <section id="theWarTab" class="tabDescription">
+              <img src="images/navPhotos/theWar_polaroidSmall.png" alt="The war of 1870 Polaroid Image">
+              <h3>History of the War</h3>
+              <p>This war had namy close-run battles that ended poorly for the French. It led indirectly to WWI, which of course, led to WWII.</p>
+            </section>
+          </div>
+
+          <div class="primaryContent">
+
+            <aside id="primaryPic" class="historyNotes">
+              <img src="images/primaryPic.png" alt="French Artilleryman - 1870">
+            </aside>
+
+            <section class="motd historyNotes">
+              <h4>Why 1870?</h4>
+              <p>Large, colorfully uniformed armies with diverse types of units.</p><br>
+              <p>Large-scale battles, many of which were very close-run affairs with lots of "what-if" scenarios.</p><br>
+              <p>The fall of one empire.  The rise of another.</p><br>
+              <p>Seeds sown of a future, yet even more terrible war.</p><br>
+            </section>
+
+            <section class="quoteToday historyNotes">
+              <h4>Today's Snapshot</h4>
+              <p>
+                "General Frossard, undefeated, thought he had been defeated, and so he was.<br><br> General von Zastrow was half-defeated, but refused to be so was not.<br><br> This was the secret to the Prussian victory. "<br><br>
+
+                - <span>French historian</span>
+              </p>
+              <br>
+            </section>
+          </div> <!-- end div.primaryContent -->
+        </div> <!-- end div.main -->
+      </main>
+
+    </div> <!-- end div#twoColumWrapper -->
+
+    <div id="footerWrap">
+      <address>
+        <a href="mailto:drehbein@student.cvtc.edu">Send a dispatch</a>
+      </address>
+
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="theWar/theWar.html">The War</a> | </li>
+            <li><a href="theDepot/theDepot.html">The Depot</a> | </li>
+            <li><a href="gaming1870/gaming1870.html">Gaming 1870</a> | </li>
+            <li><a href="theArt/theArt.html">The Art</a> | </li>
+            <li><a href="theLibrary/theLibrary.html">The Library</a></li>
+          </ul>
+        </nav>
+
+        <!-- Copyright and contact email -->
+        <p>&copy; 2025 Devion Rehbein &nbsp; All rights reservedi</p>
+      </footer>
+    </div> <!-- end footerWrap -->
   </div>
 </body>
 </html>
