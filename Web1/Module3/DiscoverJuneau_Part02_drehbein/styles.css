@@ -6,3 +6,64 @@ body {
   font-family: poppins;
 }
 
+.wrapper {
+  background-color: #fff;
+  width: 99%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #15164b;
+  color: #e6e7ed;
+  padding: 10px 30px 10px;
+  margin: 0;
+  text-align: center;
+}
+
+h1 > header, h1 > footer {
+  color: #50b3e8;
+  font-size: 2.2em;
+  line-height: .8em;
+}
+
+header span, footer span {
+  color: #e6e7ed;
+  font-size: .7em;
+}
+
+#topNav {
+  text-align: center;
+}
+
+#topNav a {
+  color: #4647a7;
+}
+
+nav {
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+main {
+  margin-top: 0;
+}
+
+main > div {
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+main div img {
+  width: 82%;
+  max-width: 100%;
+}
+
+main > h2 {
+  background-color: #15164b;
+  color: #e6e7ed;
+  
+}
