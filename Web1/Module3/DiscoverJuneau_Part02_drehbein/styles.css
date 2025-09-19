@@ -20,7 +20,7 @@ header {
   text-align: center;
 }
 
-h1 > header, h1 > footer {
+header > h1, footer > h1 {
   color: #50b3e8;
   font-size: 2.2em;
   line-height: .8em;
@@ -52,7 +52,7 @@ main {
 }
 
 main > div {
-  align-content: center;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -65,5 +65,53 @@ main div img {
 main > h2 {
   background-color: #15164b;
   color: #e6e7ed;
-  
+  font-family: "Marck Script", impact;
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-indent: 10%;
+  margin-top: -7px;
+  padding: 1.25rem;
+}
+
+#exploreJuneau {
+  background-color: #fff;
+  color: #15164b;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+main ul {
+  list-style-image: url(images/marker.gif);
+  margin-top: 0;
+}
+
+.exploreOptions {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+main .exploreOptions li a   {
+  display: inline-block;
+  text-indent: 1rem;
+}
+
+aside {
+  text-align: center;
+  background-color: #fff;
+}
+
+dt {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #15164b;
+  color: #e6e7ed;
+  font-size: .8em;
+  font-style: italic;
+  text-align: center;
+}
+
+footer a {
+  color: #e6e7ed;
 }
