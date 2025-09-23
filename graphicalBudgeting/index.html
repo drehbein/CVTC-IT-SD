@@ -10,19 +10,32 @@
 </head>
 <body>
   <header>
-    <a href="/index.html"><img src="logo.svg" alt="Graphical Budgeting logo"></a>
-    <h1>Graphical Budgeting</h1>
-    <nav>
-      <a href="/index.html">Home</a> |
-      <a href="#">Editor</a> |
-      <a href="#">Settings</a>
-    </nav>
+    <a href="/index.html"><img id="headerLogo" src="images/logo.svg" alt="Graphical Budgeting logo"></a>
+    <h2 id="date">September 2025</h2>
+    <h2 id="userName">Devion R</h2>
+    <img id="userAvatar" src="images/defaultAvatar.svg" alt="User avatar">
+    <img src="images/menuIcon.svg" alt="Menu button">
   </header>
+  <nav>
+    <a href="/index.html">Home</a> |
+    <a href="#">Editor</a> |
+    <a href="#">Settings</a>
+  </nav>
   <hr>
   <main>
-    <section>
-      <!-- graph! -->
-    </section>
+    <div id="graphContainer">
+      <div id="graphPlaceholder"><p>[Graph Placeholder]</p></div>
+      <menu id="graphOptions">
+        <h3>Options</h3>
+        <ul>
+          <li>Time range</li>
+          <li>Time increments</li>
+          <li>Zero origin</li> <!-- Toggle origin being zero or relative minimum -->
+          <li>Color Sceme</li>
+          <li>Breakdown</li> <!-- Toggle line graph to bar graph, color coded by category -->
+        </ul>
+      </menu> 
+    </div>
     <div>
       <!-- list form -->
        <section>
