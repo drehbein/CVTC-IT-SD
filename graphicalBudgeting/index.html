@@ -3,31 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graphical Budgeting</title>
+  <title>Graphical Budgeting</title> <!-- Name ideas: visual..., ...finance, combine into new word like VisCash?-->
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" type="image/svg" href="logo.svg">
   <script src="script.js"></script>
 </head>
 <body>
   <header>
-    <a href="/index.html"><img id="headerLogo" src="images/logo.svg" alt="Graphical Budgeting logo"></a>
+    <a href="/index.html"><img id="headerLogo" src="images/logo.svg" alt="Graphical Budgeting logo"></a> <!-- TODO: round corners on logo arrow -->
     <h2 id="date">September 2025</h2>
     <h2 id="userName">Devion R</h2>
     <img id="userAvatar" src="images/defaultAvatar.svg" alt="User avatar">
     <img src="images/menuIcon.svg" alt="Menu button">
   </header>
-  <nav>
-    <a href="/index.html">Home</a> |
-    <a href="#">Editor</a> |
-    <a href="#">Settings</a>
-  </nav>
-  <hr>
   <main>
     <div id="graphContainer">
-      <div id="graphPlaceholder"><p>[Graph Placeholder]</p></div>
+      <div id="graphPlaceholder">
+        <p>
+          [Graph Placeholder]<br>
+          - Calendar integration for current date<br>
+          - Store income/expenses and initial date/$ locally<br>
+          - Build graph day-by-day<br>
+        </p>
+      </div>
       <menu id="graphOptions">
         <h3>Options</h3>
         <ul>
+          <li>Set initial $/date</li>
           <li>Time range</li>
           <li>Time increments</li>
           <li>Zero origin</li> <!-- Toggle origin being zero or relative minimum -->
@@ -36,24 +38,22 @@
         </ul>
       </menu> 
     </div>
-    <div>
-      <!-- list form -->
-       <section>
-        <!-- expenses -->
-       </section>
-       <section>
-        <!-- income -->
-       </section>
+    <div id="breakdownContainer">
+      <section id="expenses">
+        <p>Expenses: <span>sort by amount, sort by date, edit icons</span></p>
+        <ul>
+          <li>Rent | monthly on 1st | $1200 | Bills</li>
+          <li>Crunchyroll | monthly on 27th | $7 | Entertainment</li>
+        </ul>
+      </section>
+      <section id="income">
+        <p>Income: <span>sort by amount, sort by date, edit icons</span></p>
+        <ul>
+          <p>Menards | weekly on Friday | $850 | Regular</p>
+          <p>Marketplace | weekly on Maonday | $30 | Irregular</p>
+        </ul>
+      </section>
     </div>
   </main>
-  <hr>
-  <footer>
-    <nav>
-      <a href="/index.html">Home</a> |
-      <a href="#">Editor</a> |
-      <a href="#">Settings</a>
-    </nav>
-    Copyright &copy; 2025 Graphical Budgeting
-  </footer>
 </body>
 </html>

@@ -1,3 +1,11 @@
+#colorPalette {
+  color: #080705;
+  color: #40434E;
+  color: #702632;
+  color: #912F40;
+  color: #FFFFFA;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +16,7 @@ header {
   display: flex;
 }
 
-header  img {
+header img {
   width: 64px;
   background-color: lightblue;
 }
@@ -22,7 +30,25 @@ header  img {
 }
 
 #graphPlaceholder {
-  border: 1px solid red;
+  border: 1px solid blue;
   width: 70%;
   height: 500px;
+}
+
+#graphOptions {
+  border: 1px solid purple;
+}
+
+#breakdownContainer {
+  display: flex;
+}
+
+#expenses {
+  border: 1px solid red;
+  width: 50%;
+}
+
+#income {
+  border: 1px solid green;
+  width: 50%;
 }
