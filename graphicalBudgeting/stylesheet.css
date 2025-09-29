@@ -10,13 +10,17 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 #wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 64px 64px 1fr;
+  grid-template-rows: 64px 48px 1fr;
+  gap: 15px;
+  border: 15px solid #080705;
   height: 100vh;
+  background-color: #080705;
 }
 
 header {
@@ -25,9 +29,22 @@ header {
   display: flex;
 }
 
+header > * {
+  margin: auto 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
 header img {
   width: 64px;
-  background-color: lightblue;
+  height: 64px; 
+  background-color: #FFFFFA;
+}
+
+header h1 {
+  background-color: #080705;
+  color: #FFFFFA;
+  flex-grow: 1;
 }
 
 nav {
@@ -36,13 +53,48 @@ nav {
   display: flex;
 }
 
+nav > button {
+  width: 50%;
+  border: none;
+  background-color: #702632;
+  color: #FFFFFA;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+  transition: background-color 500ms linear;
+  margin: 0 15px;
+}
+
+nav > button:hover {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+nav > #graphButton {
+  background-color: #912F40;
+}
+
 #graph {
   grid-column: 1 / 5;
   grid-row: 3;
+  background-color: #FFFFFA;
+}
+
+#options {
+  grid-column: 1 / 5;
+  grid-row: 3;
+  display: none;
+  background-color: #FFFFFA;
 }
 
 #breakdown {
   grid-column: 1 / 5;
   grid-row: 3;
   display: none;
+  background-color: #FFFFFA;
+}
+
+#breakdown > * {
+  width: 50%;
+  float: left;
 }

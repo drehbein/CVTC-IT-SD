@@ -3,43 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graphical Budgeting</title> <!-- Name ideas: visual..., ...finance, combine into new word like VisCash, glance finance-->
+  <title>Glance Finance</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="icon" type="image/svg" href="logo.svg">
+  <link rel="icon" type="image/svg" href="images/logo.svg">
   <script src="script.js"></script>
 </head>
 <body>
   <div id="wrapper">
     <header>
-      <a href="/index.html"><img id="headerLogo" src="images/logo.svg" alt="Graphical Budgeting logo"></a> <!-- TODO: round corners on logo arrow -->
-      <h1 id="date">September 2025</h1>
-      <h1 id="userName">Devion R</h1>
-      <img id="userAvatar" src="images/defaultAvatar.svg" alt="User avatar">
-      <img src="images/menuIcon.svg" alt="Menu button">
+      <h1 id="name">[name]</h1>
+      <h1 id="date">[date]</h1>
     </header>
     <nav>
-      <button onclick="display('graph')">Graph</button>
-      <button onclick="display('breakdown')">Breakdown</button>
+      <button id="graphButton" onclick="display('graph', 'graphButton')">Graph</button>
+      <button id="breakdownButton" onclick="display('breakdown', 'breakdownButton')">Breakdown</button>
+      <button id="optionsButton" onclick="display('options', 'optionsButton')">Options</button>
     </nav>
-    <article id="graph">
-      <p>
-        [Graph Placeholder]<br>
-        - Calendar integration for current date<br>
-        - Store income/expenses and initial date/$ locally<br>
-        - Build graph day-by-day<br>
-      </p>
-    </article>
-    <!-- <menu id="options">
+    <div id="graph">
+      <p>[Graph Placeholder]</p>
+        <!--
+          Store income/expenses and initial date/$ locally
+          Build graph day-by-day
+        -->
+    </div>
+    <menu id="options">
       <li>[Color sceme dropdown]</li>
       <li>[Editor button]</li>
       <li>[Initial capital text input] | [Initial date calendar selector]</li>
       <li>[Time range slider]</li>
       <li>[Time increments slider]</li>
-      <li>[Origin toggle]</li> Toggle origin being zero or relative minimum
-      <li>[Categories toggle]</li> Toggle line graph to bar graph, color coded by category
+      <li>[Origin toggle]</li> <!-- Toggle origin being zero or relative minimum -->
+      <li>[Categories toggle]</li> <!--Toggle line graph to bar graph, color coded by category -->
       <li>[Sort by dropdown for breakdown]</li>
-    </menu> -->
-    <article id="breakdown">
+    </menu>
+    <div id="breakdown">
       <table id="expenses">
         <tr>
           <th>Expense</th>
@@ -80,7 +77,7 @@
           <td>Irregular</td>
         </tr>
       </table>
-    </article>
+    </div>
   </div>
 </body>
 </html>
