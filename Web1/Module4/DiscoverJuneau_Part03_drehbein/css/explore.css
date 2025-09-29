@@ -1,0 +1,46 @@
+#mainContent {
+  padding: 3.75rem 1rem;
+}
+
+div.exploreMedia {
+  width: 50%;
+}
+
+.exploreMedia video {
+  width: 100%;
+}
+
+#exploreJuneau {
+  background-color: transparent;
+  color: #15164b;
+  font-size: 3.3rem;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  letter-spacing: -.2rem;
+  text-align: center;
+}
+
+main .exploreOptions {
+  list-style-type: none;
+  list-style-image: none;
+  width: 50%;
+  padding-left: 4rem;
+}
+
+#mainContent .exploreOptions h3 {
+  color: #444;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border-bottom: none;
+  line-height: 1.8rem;
+  margin-bottom: 0;
+}
+
+main .exploreOptions li a {
+  display: inline-block;
+  text-indent: 1rem;
+  color: #555;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
