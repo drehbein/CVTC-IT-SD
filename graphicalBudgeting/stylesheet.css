@@ -12,7 +12,16 @@
   list-style-type: none;
 }
 
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 64px 64px 1fr;
+  height: 100vh;
+}
+
 header {
+  grid-column: 1 / 5;
+  grid-row: 1;
   display: flex;
 }
 
@@ -21,34 +30,19 @@ header img {
   background-color: lightblue;
 }
 
-#userName {
-  margin-left: auto;
-}
-
-#graphContainer {
+nav {
+  grid-column: 1 / 5;
+  grid-row: 2;
   display: flex;
 }
 
-#graphPlaceholder {
-  border: 1px solid blue;
-  width: 70%;
-  height: 500px;
+#graph {
+  grid-column: 1 / 5;
+  grid-row: 3;
 }
 
-#graphOptions {
-  border: 1px solid purple;
-}
-
-#breakdownContainer {
-  display: flex;
-}
-
-#expenses {
-  border: 1px solid red;
-  width: 50%;
-}
-
-#income {
-  border: 1px solid green;
-  width: 50%;
+#breakdown {
+  grid-column: 1 / 5;
+  grid-row: 3;
+  display: none;
 }
