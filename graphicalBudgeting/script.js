@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   month = date.toLocaleDateString('en-US', {month: 'long'});
   year = date.getFullYear();
   document.getElementById('date').textContent = month + " " + year;
-
 });
 
 // On navigation, switches between pages

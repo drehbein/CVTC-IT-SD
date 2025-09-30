@@ -9,9 +9,9 @@
   <script src="script.js"></script>
 </head>
 <body>
+  <!-- web layout: date, settings, br, graph, breakdown (options makes new overlay menu) -->
   <div id="wrapper">
     <header>
-      <h1 id="name">[name]</h1>
       <h1 id="date">[date]</h1>
     </header>
     <nav>
@@ -38,45 +38,35 @@
     </menu>
     <div id="breakdown">
       <table id="expenses">
-        <tr>
-          <th>Expense</th>
-          <th>Frequency</th>
-          <th>Amount</th>
-          <th>category</th>
-        </tr>
-        <tr>
-          <td>Rent</td>
-          <td>Monthly on 1st</td>
-          <td>$1200</td>
-          <td>Bills</td>
-        </tr>
-        <tr>
-          <td>Crunchyroll</td>
-          <td>Monthly on 23rd</td>
-          <td>$8</td>
-          <td>Entertainment</td>
-        </tr>
-      </table>
-      <table id="income">
-        <tr>
-          <th>Income</th>
-          <th>Frequency</th>
-          <th>Amount</th>
-          <th>category</th>
-        </tr>
-        <tr>
-          <td>Menards</td>
-          <td>Weekly on Friday</td>
-          <td>$850</td>
-          <td>Regular</td>
-        </tr>
-        <tr>
-          <td>Marketplace</td>
-          <td>weekly on Monday</td>
-          <td>$30</td>
-          <td>Irregular</td>
-        </tr>
-      </table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Frequency</th>
+            <th>Amount</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rent</td>
+            <td>Monthly on 1st</td>
+            <td>- $1200</td>
+            <td>Bills</td>
+          </tr>
+          <tr>
+            <td>Crunchyroll</td>
+            <td>Monthly on 23rd</td>
+            <td>- $8</td>
+            <td>Entertainment</td>
+          </tr>
+          <tr>
+            <td>Menards</td>
+            <td>Weekly on Friday</td>
+            <td>+ $850</td>
+            <td>Job</td>
+          </tr>
+        </tbody>
+     </table>
     </div>
   </div>
 </body>

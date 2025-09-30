@@ -65,13 +65,13 @@ nav > button {
   margin: 0 15px;
 }
 
-nav > button:hover {
-  font-weight: 600;
-  letter-spacing: 2px;
+nav > *:first-child {
+  background-color: #912F40;
+  margin-left: 0;
 }
 
-nav > #graphButton {
-  background-color: #912F40;
+nav > *:last-child {
+  margin-right: 0;
 }
 
 #graph {
@@ -95,6 +95,5 @@ nav > #graphButton {
 }
 
 #breakdown > * {
-  width: 50%;
-  float: left;
+  width: 100%;
 }
