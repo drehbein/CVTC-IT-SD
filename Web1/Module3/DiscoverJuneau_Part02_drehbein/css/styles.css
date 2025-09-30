@@ -90,6 +90,10 @@ main ul {
   list-style-type: none;
 }
 
+main .exploreOptions li {
+  line-height: .8rem;
+}
+
 main .exploreOptions li a   {
   display: inline-block;
   text-indent: 1rem;
