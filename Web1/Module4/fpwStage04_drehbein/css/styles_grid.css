@@ -153,8 +153,11 @@ nav > ul {
 .main {
   /* border: 1px solid red; */
   position: relative;
-  top: 3.2rem;
-  left: 2.4rem;
+  top: 1.4rem;
+  /* left: 2.4rem; */
+  clear: both;
+  display: grid;
+  
 }
 
 #navDescription {
@@ -211,9 +214,9 @@ nav > ul {
   display: flex;
 }
 
-.historyNotes {
-  /* float: left; */
-}
+/* .historyNotes {
+  float: left;
+} */
 
 #primaryPic {
   width: 18%;
