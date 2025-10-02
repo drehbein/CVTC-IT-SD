@@ -211,9 +211,9 @@ nav > ul {
   display: flex;
 }
 
-.historyNotes {
-  /* float: left; */
-}
+/* .historyNotes {
+  float: left;
+} */
 
 #primaryPic {
   width: 18%;

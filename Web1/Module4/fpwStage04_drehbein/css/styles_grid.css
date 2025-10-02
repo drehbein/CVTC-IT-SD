@@ -157,25 +157,29 @@ nav > ul {
   /* left: 2.4rem; */
   clear: both;
   display: grid;
-  
+  grid-template-columns: 18% 39% 43%;
+  row-gap: 20px;
+  padding: 1 3rem 1.25rem 2.4rem;
 }
 
-#navDescription {
-  /* border: 2px solid green; */
+/* #navDescription {
+  border: 2px solid green;
   height: 10.625rem;
   background: url(../images/tornPaper02.png) no-repeat;
-
-}
+} */
 
 .tabDescription {
-  position: absolute; 
-  /* border: 1px solid green; */
+  /* position: absolute; 
+  border: 1px solid green;
   top: 0.938rem;
-  left: .313rem;
+  left: .313rem; */
   width: 20rem;
   padding: .625rem;
   opacity: 0;
-  /* display: none; */
+  background: url(../images/tornPaper02.png) no-repeat;
+  height: 9rem;
+  grid-row: 1 / 2;
+  grid-column: 1 / 4;
 }
 
 #defaultTab {
@@ -184,8 +188,10 @@ nav > ul {
 
 .tabDescription > img:first-child {
   position: absolute;
-  top: -1rem;
-  right: -12.5rem;
+  /* top: -1rem;
+  right: -12.5rem; */
+  top: 0;
+  right: 5.2rem;
 }
 
 .tabDescription > h3 {
@@ -193,6 +199,7 @@ nav > ul {
   font-family: Tahoma, sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
+  padding-top: .875rem;
 }
 
 .tabDescription > p {
@@ -207,19 +214,17 @@ nav > ul {
 }
 
 .primaryContent {
-  /* border: 1px solid purple; */
+  border: 1px solid purple;
   width: 37.5rem;
   height: 13.75rem;
   margin-top: 1rem;
   display: flex;
 }
 
-/* .historyNotes {
-  float: left;
-} */
-
 #primaryPic {
-  width: 18%;
+  /* width: 18%; */
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
 
 #primaryPic > img {
@@ -230,13 +235,15 @@ nav > ul {
 }
 
 .motd {
-  width: 36%;
+  /* width: 36%; */
   margin-top: .313rem;
   font-family: Tahoma, "Trebuchet MS", sans-serif;
   font-size: .875rem;
   line-height: 1em;
   padding-left: 1.25rem;
   box-shadow: -2px -1px 4px #76623c;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .historyNotes > h4 {
@@ -252,7 +259,8 @@ nav > ul {
 }
 
 .quoteToday {
-  width: 37%;
+  /* width: 37%; */
+  height: 12.65rem;
   margin-top: .313rem;
   margin-left: .625rem;
   font-family: Tahoma, "Trebuchet MS", sans-serif;
@@ -260,6 +268,8 @@ nav > ul {
   line-height: 1.4em;
   padding-left: 1.25rem;
   box-shadow: -2px -1px 4px #76623c;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
 }
 
 #footerWrap {

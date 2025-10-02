@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+
+  height: 600px;
+
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(2, 100px);
+
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  /* grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: stretch;
+  align-items: end; */
+}
+
+/* .item-1 {
+  justify-self: center;
+  align-self: stretch;
+} */
