@@ -70,7 +70,7 @@ header img[src*="diary" i] {
   height: 30.938rem;
   /* border: 1px solid red; */
   position: relative;
-  background-color: #463003 url(../images/bGrounds/secondary_backGround.jpg);
+  background: #463003 url(../images/bGrounds/secondary_backGround.jpg);
 }
 
 #journal {
@@ -159,7 +159,7 @@ nav > ul {
   display: grid;
   grid-template-columns: 18% 39% 43%;
   row-gap: 20px;
-  padding: 1 3rem 1.25rem 2.4rem;
+  padding: 0 3rem 1.25rem 2.4rem;
 }
 
 /* #navDescription {
@@ -230,7 +230,6 @@ nav > ul {
 #primaryPic > img {
   position: relative;
   top: -.8rem;
-  opacity: .4rem;
   transform: scaleX(-1);
 }
 

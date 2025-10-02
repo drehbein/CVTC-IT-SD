@@ -70,7 +70,7 @@ header img[src*="diary" i] {
   height: 30.938rem;
   /* border: 1px solid red; */
   position: relative;
-  background-color: #463003 url(../images/bGrounds/secondary_backGround.jpg);
+  background: #463003 url(../images/bGrounds/secondary_backGround.jpg);
 }
 
 #journal {
@@ -222,7 +222,7 @@ nav > ul {
 #primaryPic > img {
   position: relative;
   top: -.8rem;
-  opacity: .4rem;
+  /* opacity: .4rem; */
   transform: scaleX(-1);
 }
 
