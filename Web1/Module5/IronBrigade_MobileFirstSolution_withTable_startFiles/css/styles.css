@@ -1,14 +1,210 @@
 /* Mobile First Design - starting with phone - up to 500px wide */
 
+/* Default CSS is for mobile. */
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Lato', Arial, sans-serif;
 }
 
 /*  Note that %'s used on widths, margin, padding, etc... are always a percentage of the container element's width, etc... */
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: .125em 0 .625em #222;
+  position: relative;
+}
+
+.mainHeader {
+  width: 100%;
+  background: url(../images/bg.png) repeat-x;
+  height: 4em;
+  position: relative;
+}
+
+.mainHeader > h1 {
+  text-transform: uppercase;
+  /* border: 1px solid green; */
+  padding-left: 4%;
+  font-family: Oxygen, sans-serrif;
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 96%;
+  color: #555;
+}
+
+.mainHeader > h2 {
+  font-size: .8em;
+  /* border: 1px solid red; */
+  width: 60%;
+  font-weight: 400;
+  color: #888;
+  line-height: 90%;
+  margin: 1% 4% 0 12%;
+}
+
+.acw {
+  font-size: .8em;
+  padding-left: 15%;
+}
+
+.mainNav {
+  min-height: 5em;
+  background-color: #660000;
+}
+
+.mainNav > ul {
+  list-style: none;
+  text-align: center;
+}
+
+.mainNav li {
+  float: left;
+  width: 33.3%;
+}
+
+.mainNav li:nth-child(4) {
+  clear: left;
+  float: left;
+  margin-left: 16%;
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-size: .7em;
+  padding: 8% 0 6%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000;
+}
+
+.mainNav a:hover {
+  background-color: #4d0000;
+}
+
+.mainNav sup {
+  font-size: .6em;
+  position: relative;
+  top: .2em;
+}
+
+/* .banner {
+  width: 100%;
+  border: 1px solid blue;
+  display: none;
+} */
+
+.banner > img {
+  max-width: 100%;
+}
+
+main {
+  /* border: 1px solid orange; */
+  background: url(../images/bg.png) repeat-x;
+  padding-top: 1em;
+  min-height: 20em;
+}
+
+main > .soldierPic {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0;
+  right: .625em;
+}
+
+#secondWI {
+  width: 2em;
+}
+
+main > .about {
+  margin: 0 6% 2.4% 5%;
+  width: 90%;
+  text-align: justify;
+  position: relative;
+}
+
+main > .about h2 {
+  color: #660000;
+  font-size: .9em;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+
+main > .about p {
+  font-size: .8em;
+  line-height: 1.4em;
+}
+
+main > .about a {
+  text-decoration: none;
+  color: wheat;
+  background-color: #293f50;
+  padding: .8em;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin: 2% .5% 3%;
+  border-radius: .5em;
+  float: right;
+}
+
+main > .about a:hover {
+  text-decoration: underline;
+}
+
+.advert {
+  display: none;
+} 
+
+@media screen and (min-width: 48rem) {
+  .mainHeader {
+    height: 5em;
+  }
+
+  .mainHeader > h1 {
+    float: left;
+    width: 50%;
+    padding-left: 9.4%;
+    font-size: 3em;
+    font-weight: 300;
+    text-shadow: -1px -1px 0 #000;
+  }
+
+  .mainHeader > h2 {
+    float: right;
+    font-size: 1.2em;
+    width: 30%;
+    font-weight: 200;
+    color: #aaa;
+    line-height: 100%;
+    margin: 3% 4% 0 0;
+  }
+
+  .acw {
+    float: right;
+    font-size: .64em;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .mainHeader {
+    height: 6em;
+  }
+
+  .mainHeader > h1 {
+    font-size: 4em;
+  }
+
+  .mainHeader > h2 {
+    font-size: 1.6em;
+  }
+}
