@@ -1,0 +1,49 @@
+.about > table {
+  width: 100%;
+  margin: auto;
+  border-spacing: .1rem;
+}
+
+.about caption {
+  text-align: right;
+  font-size: .6rem;
+}
+
+thead > tr {
+  background-color: #bfbaa8;
+}
+
+thead th {
+  padding: .2rem 0 .4rem;
+  text-align: center;
+  font-size: .7rem;
+  font-weight: 900;
+}
+
+tbody td {
+  padding: .2rem 0;
+  text-align: center;
+  font-size: .7rem;
+}
+
+tbody td:first-child {
+  text-align: left;
+  padding-left: .4rem;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #e3e6f7;
+}
+
+tfoot > tr {
+  text-align: center;
+  font-size: .6rem;
+}
+
+.about > aside {
+  display: none;
+}
+
+main > .about a {
+  margin-top: 2rem;
+}

@@ -92,7 +92,7 @@ body {
 .mainNav sup {
   font-size: .6em;
   position: relative;
-  top: .2em;
+  top: .4em;
 }
 
 /* .banner {
@@ -164,6 +164,51 @@ main > .about a:hover {
   display: none;
 } 
 
+.mainFooter {
+  clear: both;
+  background: url(../images/footerBG.jpg);
+  border-top: ridge 2px #606044;
+  padding-top: 3%;
+  color: #fff;
+  min-height: 3em;
+  font-size: .75em;
+  height: 6em;
+}
+
+.copyRight {
+  width: 90%;
+  margin-left: 4%;
+  text-align: center;
+  height: 3em;
+  line-height: 100%;
+}
+
+.educational {
+  font-size: .8em;
+}
+
+.fb {
+  width: 90%;
+  text-align: center;
+  height: 3em;
+  font-size: .9em;
+  margin: 0 4%;
+}
+
+.fbText {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-right: .8em;
+  position: relative;
+  top: -.9em;
+}
+
+.fb > a {
+  display: inline-block;
+}
+
 @media screen and (min-width: 48rem) {
   .mainHeader {
     height: 5em;
@@ -193,6 +238,76 @@ main > .about a:hover {
     font-size: .64em;
     padding-left: 0;
   }
+
+  .mainNav {
+    min-height: 2.8em;
+  }
+
+  .mainNav li {
+    display: inline-block;
+    width: 20%;
+  }
+
+  .mainNav li:nth-child(4) {
+    clear: none;
+    margin-left: 0;
+  }
+
+  .mainNav a {
+    color: #ddd;
+    font-size: .8em;
+  }
+
+  .mainNav sup {
+    top: .2em;
+  }
+
+  main {
+    display: flex;
+  }
+
+  main > .soldierPic {
+    position: static;
+    width: 20%;
+    margin: 2.4% 0 3%;
+  }
+
+  #secondWI {
+    width: 9.625em;
+    float: right;
+    max-width: 100%;
+  }
+
+  main > .about {
+    margin: 2.4 6% 2.4% 5%;
+    width: 90%;
+  }
+
+  main > .about h2 {
+    font-size: 1.3em;
+    font-weight: normal;
+  }
+
+  main > .about p {
+    font-size: .92em;
+    line-height: 1.5em;
+  }
+
+  .mainFooter {
+    border-top: 1px solid #606044;
+    padding-top: 2.6% 0 1.4%;
+    font-size: .8em;
+    height: 5em;
+  }
+
+  .educational {
+    font-size: .6em;
+  }
+
+  .fbText {
+    letter-spacing: .04em;
+    top: -.8em;
+  }
 }
 
 @media screen and (min-width: 64rem) {
@@ -206,5 +321,127 @@ main > .about a:hover {
 
   .mainHeader > h2 {
     font-size: 1.6em;
+  }
+
+  .mainNav {
+    min-height: 4.2rem;
+  }
+
+  .mainNav {
+    position: relative;
+    top: .375rem;
+  }
+
+  .mainNav a {
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .mainNav sup {
+    top: .225em;
+  }
+
+  main > .about h2 {
+    font-size: 1.7em;
+  }
+
+  main > .about p {
+    font-size: 1em;
+  }
+
+  .copyRight {
+    float: left;
+    width: 40%;
+    margin-left: 2%;
+    text-align: right;
+    height: auto;
+    line-height: 90%;
+  }
+
+  .fb {
+    float: right;
+    width: 40%;
+    margin-right: 2%;
+    text-align: left;
+    font-size: 1em;
+  }
+
+  .fbText {
+    top: -.6em;
+  }
+}
+
+@media screen and (min-width: 87.5rem) {
+  .mainHeader > h2 {
+    margin: 0;
+    position: relative;
+    top: 2.25rem;
+    right: 2.875rem;
+  }
+
+  .acw {
+    margin-right: 10%;
+  }
+
+  .mainNav {
+    min-height: 6.4em;
+  }
+
+  .mainNav li {
+    top: 1rem;
+  }
+
+  .mainNav a {
+    font-size: 1.4em;
+  }
+
+  .mainNav sup {
+    top: .15em;
+  }
+
+  #secondWI {
+    width: 12.625em;
+  }
+
+  main > .about h2 {
+    font-size: 2em;
+  }
+
+  main > .about p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  .advert {
+    display: block;
+    border-top: 1.875rem ridge rgba(53, 46, 46, .6);
+    border-bottom: 3px ridge rgba(53, 46, 46, .6);
+    background-color: rgba(53, 46, 46, .1);
+    position: relative;
+    top: 2.3rem;
+    right: 2rem;
+    height: 12.5rem;
+    width: 21.25rem;
+    padding: .5rem;
+    text-align: center;
+  }
+
+  .advert h3 {
+    color: #ddd;
+    text-shadow: -1px -3px 0 rgb(53, 46, 46);
+    font-size: 1.2rem;
+    letter-spacing: .125rem;
+    font-weight: normal;
+    position: absolute;
+    top: -1.75rem;
+    left: .625rem;
+  }
+
+  .advert a {
+    color: rgb(53, 46, 46);
+  }
+
+  main > .about a {
+    font-size: 1em;
   }
 }
