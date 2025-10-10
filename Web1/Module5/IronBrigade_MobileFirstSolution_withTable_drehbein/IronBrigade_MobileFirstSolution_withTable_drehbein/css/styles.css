@@ -1,6 +1,6 @@
-/* Mobile First Design - starting with phone - up to 500px wide */
+/* Mobile First Design - starting with phone - up to 500px wide 
 
-/* Default CSS is for mobile. */
+Smaller to larger where the default CSS (CSS that is NOT inside a media query) will be for the smallest viewport width we are supporting. */
 
 * {
   margin: 0;
@@ -12,9 +12,9 @@ body {
 }
 
 /*  Note that %'s used on widths, margin, padding, etc... are always a percentage of the container element's width, etc... */
-
 #wrapper {
   width: 90%;
+  /* border: 1px solid red; */
   margin: 0 auto;
   box-shadow: .125em 0 .625em #222;
   position: relative;
@@ -28,13 +28,13 @@ body {
 }
 
 .mainHeader > h1 {
-  text-transform: uppercase;
   /* border: 1px solid green; */
+  width: 96%;
   padding-left: 4%;
-  font-family: Oxygen, sans-serrif;
+  font-family: Oxygen, sans-serif;
   font-size: 1.5em;
   font-weight: 600;
-  width: 96%;
+  text-transform: uppercase;
   color: #555;
 }
 
@@ -61,9 +61,11 @@ body {
 .mainNav > ul {
   list-style: none;
   text-align: center;
+  /* border: 1px solid yellow; */
 }
 
 .mainNav li {
+  /* display: inline; */
   float: left;
   width: 33.3%;
 }
@@ -162,7 +164,7 @@ main > .about a:hover {
 
 .advert {
   display: none;
-} 
+}
 
 .mainFooter {
   clear: both;
@@ -177,6 +179,7 @@ main > .about a:hover {
 
 .copyRight {
   width: 90%;
+  /* border: 1px solid red; */
   margin-left: 4%;
   text-align: center;
   height: 3em;
@@ -209,7 +212,12 @@ main > .about a:hover {
   display: inline-block;
 }
 
+/* Media query that will set up the CSS to be applied (and will potentially override some of the inherited CSS from above) to devices with a viewport screen with a minimum width of 768px (48rem) */
+
+/* Tablet (portrait mode) breakpoint */
+
 @media screen and (min-width: 48rem) {
+
   .mainHeader {
     height: 5em;
   }
@@ -254,8 +262,8 @@ main > .about a:hover {
   }
 
   .mainNav a {
-    color: #ddd;
     font-size: .8em;
+    color: #ddd;
   }
 
   .mainNav sup {
@@ -279,8 +287,8 @@ main > .about a:hover {
   }
 
   main > .about {
-    margin: 2.4 6% 2.4% 5%;
-    width: 90%;
+    margin: 2.4% 6% 2.4% 5%;
+    width: 60%;
   }
 
   main > .about h2 {
@@ -295,7 +303,7 @@ main > .about a:hover {
 
   .mainFooter {
     border-top: 1px solid #606044;
-    padding-top: 2.6% 0 1.4%;
+    padding: 2.6% 0 1.4%;
     font-size: .8em;
     height: 5em;
   }
@@ -308,9 +316,13 @@ main > .about a:hover {
     letter-spacing: .04em;
     top: -.8em;
   }
+
 }
 
+
+/* Media query breakpoint for normal desktop (1024px = 64rem) on up */
 @media screen and (min-width: 64rem) {
+
   .mainHeader {
     height: 6em;
   }
@@ -324,17 +336,17 @@ main > .about a:hover {
   }
 
   .mainNav {
-    min-height: 4.2rem;
+    min-height: 4.2em;
   }
 
-  .mainNav {
+  .mainNav li {
     position: relative;
     top: .375rem;
   }
 
   .mainNav a {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: normal;
   }
 
   .mainNav sup {
@@ -369,9 +381,12 @@ main > .about a:hover {
   .fbText {
     top: -.6em;
   }
+
 }
 
+/* Media Query breakpoint for higher resolution desktop (1400px = 87.5rem) on up... */
 @media screen and (min-width: 87.5rem) {
+
   .mainHeader > h2 {
     margin: 0;
     position: relative;
@@ -415,7 +430,7 @@ main > .about a:hover {
   .advert {
     display: block;
     border-top: 1.875rem ridge rgba(53, 46, 46, .6);
-    border-bottom: 3px ridge rgba(53, 46, 46, .6);
+    border-bottom: .1875rem ridge rgba(53, 46, 46, .6);
     background-color: rgba(53, 46, 46, .1);
     position: relative;
     top: 2.3rem;
@@ -444,4 +459,5 @@ main > .about a:hover {
   main > .about a {
     font-size: 1em;
   }
+
 }
