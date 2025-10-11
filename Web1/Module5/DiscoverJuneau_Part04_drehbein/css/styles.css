@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #c8cbdb;
+  color: #2e0000;
+  font-family: poppins;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 99%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #15164b;
+  color: #e6e7ed;
+  padding: 10px 30px 10px;
+  margin: 0;
+  text-align: center;
+}
+
+header > h1, footer > h1 {
+  color: #50b3e8;
+  font-size: 2.2em;
+  line-height: .8em;
+  text-indent: .375rem;
+}
+
+header span, footer span {
+  color: #e6e7ed;
+  font-size: .7em;
+}
+
+#topNav {
+  float: left;
+  width: 16%;
+  font-weight: bold;
+  padding-left: .625rem;
+  color: rgb(123, 126, 156);
+}
+
+nav {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.2em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: #1113a0;
+}
+
+nav a:focus, nav a:hover {
+  color: #3033d4;
+}
+
+main {
+  margin-top: 0;
+}
+
+main > div {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+main div img {
+  width: 82%;
+  max-width: 100%;
+}
+
+main h2 {
+  background-color: #15164b;
+  color: #e6e7ed;
+  font-family: "Marck Script", impact;
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-indent: 10%;
+  margin-top: -7px;
+  padding: 1.25rem;
+}
+
+main > p {
+  padding: 0 8.75rem;
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  text-align: justify;
+}
+
+main ul {
+  list-style-image: url(../images/marker.gif);
+  list-style-position: inside;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+#mainContent {
+  display: flex;
+  background-color: #ccc;
+  padding: 3.75rem 5.4rem;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+#mainContent > article {
+  padding: 0 2.5rem;
+  width: 27%;
+  margin: 0 auto;
+}
+
+#mainContent article:nth-child(2) {
+  border-left: 1px solid #222;
+  border-right: 1px solid #222;
+}
+
+#mainContent .articleImage {
+  width: 100%;
+}
+
+#mainContent h3{
+  color: rgb(30, 30, 97);
+  font-size: 1.3em;
+  font-weight: 500;
+  border-bottom: 1px solid #222;
+}
+
+#mainContent .content p {
+  font-size: .9rem;
+  color: #000;
+}
+
+aside {
+  text-align: center;
+  background-color: #fff;
+}
+
+.socialMedia {
+  background-color: rgb(123, 126, 156);
+  padding: 2.5rem 5rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.socialMedia hr {
+  width: 32%;
+  height: 1px;
+  background-color: #555;
+  border: none;
+  display: inline-block;
+}
+
+.socialMedia section {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.socialMedia img {
+  width: 3.125rem;
+}
+
+footer {
+  background-color: #15164b;
+  color: #e6e7ed;
+  font-size: .8em;
+  font-style: italic;
+  text-align: center;
+}
+
+footer a:link, footer a:visited {
+  color: #e6e7ed;
+}
