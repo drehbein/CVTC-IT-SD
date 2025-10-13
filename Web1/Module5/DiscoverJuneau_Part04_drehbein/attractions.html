@@ -9,24 +9,23 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1><span>The</span><br> Last Frontier</h1>
+      <nav id="topNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">How To Explore</a></li>
+          <li><a href="stay.html">Where To Stay</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav id="topNav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>What To Do</li>
-        <li><a href="explore.html">How To Explore</a></li>
-        <li><a href="lodging.html">Where To Stay</a></li>
-      </ul>
-    </nav>
-    <main>
+   <main>
       <div>
-        <img src="images/Discover_Juneau_1200x800.jpg" alt="Juneau, Alaska from Douglas Island">
+        <img srcset="images/Discover_Juneau_600x400.jpg 700w, images/Discover_Juneau_1200x800.jpg 1000w" sizes="(max-width: 47.9375rem) 80vw, (min-width: 60rem) 100vw" src="images/Discover_Juneau_1200x800.jpg" alt="Juneau, Alaska from Douglas Island">
+        <!-- widthDescriptorValue / (screenWidth * viewportWidth%) -->
       </div>
       <h2>What To Do</h2>
       <p>Enjoy the history of Juneau but leave plenty of time for adventure! The landscape is undeniably beautiful and there are many opportunities to take in the scenery. Complete your day with dinner in the many restaurants in the beautiful, historic downtown and stop in one of the many shops on your way back home.</p>
       <section id="mainContent">
-        <article class="topics">
+        <article class="topics" id="topic1">
           <img src="images/Shrine.jpg" alt="Shrine of St. Theresa" class="articleImage">
           <h3>Shrine of St Theresa</h3>
           <div class="content">
@@ -38,7 +37,7 @@
             </ul>
           </div>
         </article>
-        <article class="topics">
+        <article class="topics" id="topic2">
           <img src="images/MendenhallGlacier.jpg" alt="Mendenhall Glacier - Juneau Alaska" class="articleImage">
           <h3>Mendenhall Glacier</h3>
           <div class="content">
@@ -50,7 +49,7 @@
             </ul>
           </div>
         </article>
-        <article class="topics">
+        <article class="topics" id="topic3">
           <img src="images/DowntownShopping.jpg" alt="Shopping in Downtown Juneau, Alaska" class="articleImage">
           <h3>Historic Downtown Shopping</h3>
           <div class="content">
@@ -79,14 +78,17 @@
         </section>
         <hr>
       </nav>
-      <h1><span>The</span><br> Last Frontier</h1>
-        Copyright &copy; 2024 The Last Frontier<br>
-      <a href="mailto:drehbein@student.cvtc.edu">drehbein@student.cvtc.edu</a><br><br>
-      <nav>
-        <a href="#">Legal Stuff</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">Security</a>
-      </nav>
+      <section class="footerContent">
+        <div id="contact">
+          Copyright &copy; 2024 The Last Frontier<br>
+          <a href="mailto:drehbein@student.cvtc.edu">drehbein@student.cvtc.edu</a>
+        </div>
+        <nav>
+          <a href="#">Legal Stuff</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#">Security</a>
+        </nav>
+      </section>
     </footer>
   </div>
 </body>

@@ -1,13 +1,6 @@
-#mainContent {
-  padding: 3.75rem 1rem;
-}
-
-div.exploreMedia {
-  width: 50%;
-}
-
 .exploreMedia video {
   width: 100%;
+  max-width: 100%;
 }
 
 #exploreJuneau {
@@ -16,6 +9,7 @@ div.exploreMedia {
   font-size: 3.3rem;
   margin: 0;
   padding: 0;
+  padding-top: .5rem;
   text-indent: 0;
   letter-spacing: -.2rem;
   text-align: center;
@@ -24,8 +18,7 @@ div.exploreMedia {
 main .exploreOptions {
   list-style-type: none;
   list-style-image: none;
-  width: 50%;
-  padding-left: 4rem;
+  text-align: center;
 }
 
 #mainContent .exploreOptions h3 {
@@ -35,12 +28,31 @@ main .exploreOptions {
   border-bottom: none;
   line-height: 1.8rem;
   margin-bottom: 0;
+  text-align: center;
 }
 
 main .exploreOptions li a {
   display: inline-block;
-  text-indent: 1rem;
   color: #555;
   text-decoration: none;
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 64rem) {
+  #mainContent {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  main .exploreOptions {
+    text-align: left;
+  }
+
+  main .exploreOptions h3 {
+    text-align: left;
+  }
+
+  main .exploreOptions li a {
+    text-indent: 1rem;
+  }
 }

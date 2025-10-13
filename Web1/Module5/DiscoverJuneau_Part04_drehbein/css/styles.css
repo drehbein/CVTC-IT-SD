@@ -13,31 +13,35 @@ body {
 }
 
 header {
-  background-color: #15164b;
+  background: #15164b url(../images/LogoLastFrontier_white.png) no-repeat center .625rem / 10rem;
   color: #e6e7ed;
-  padding: 10px 30px 10px;
   margin: 0;
-  text-align: center;
-}
-
-header > h1, footer > h1 {
-  color: #50b3e8;
-  font-size: 2.2em;
-  line-height: .8em;
-  text-indent: .375rem;
-}
-
-header span, footer span {
-  color: #e6e7ed;
-  font-size: .7em;
+  height: 7rem;
+  position: relative;
+  display: flex;
+  gap: 4rem;
 }
 
 #topNav {
-  float: left;
-  width: 16%;
-  font-weight: bold;
-  padding-left: .625rem;
-  color: rgb(123, 126, 156);
+  font-size: .9rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: -1rem;
+  width: 100%;
+}
+
+#topNav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#topNav li {
+  text-align: center;
+  width: 33%;
+}
+
+#topNav a {
+  color: #ddd;
 }
 
 nav {
@@ -54,26 +58,8 @@ nav a {
   text-decoration: none;
 }
 
-nav a:link, nav a:visited {
-  color: #1113a0;
-}
-
-nav a:focus, nav a:hover {
-  color: #3033d4;
-}
-
-main {
-  margin-top: 0;
-}
-
-main > div {
-  text-align: right;
-  margin: 0;
-  padding: 0;
-}
-
-main div img {
-  width: 82%;
+main > div img {
+  width: 100%;
   max-width: 100%;
 }
 
@@ -81,48 +67,33 @@ main h2 {
   background-color: #15164b;
   color: #e6e7ed;
   font-family: "Marck Script", impact;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 400;
-  text-indent: 10%;
-  margin-top: -7px;
+  margin-top: -0.4375rem;
   padding: 1.25rem;
+  text-align: center;
 }
 
 main > p {
-  padding: 0 8.75rem;
-  font-size: 1.3rem;
+  padding: 0 2rem;
+  font-size: 1rem;
   margin-bottom: 2.5rem;
-  text-align: justify;
-}
-
-main ul {
-  list-style-image: url(../images/marker.gif);
-  list-style-position: inside;
-  padding-left: 0;
-  margin-top: 0;
+  text-align: left;
 }
 
 #mainContent {
-  display: flex;
   background-color: #ccc;
-  padding: 3.75rem 5.4rem;
+  padding-bottom: .6rem;
   box-sizing: border-box;
-  margin: auto;
 }
 
 #mainContent > article {
-  padding: 0 2.5rem;
-  width: 27%;
-  margin: 0 auto;
-}
-
-#mainContent article:nth-child(2) {
-  border-left: 1px solid #222;
-  border-right: 1px solid #222;
+  margin-bottom: 1.8rem;
 }
 
 #mainContent .articleImage {
   width: 100%;
+  max-width: 100%;
 }
 
 #mainContent h3{
@@ -130,6 +101,7 @@ main ul {
   font-size: 1.3em;
   font-weight: 500;
   border-bottom: 1px solid #222;
+  text-align: center;
 }
 
 #mainContent .content p {
@@ -142,40 +114,238 @@ aside {
   background-color: #fff;
 }
 
-.socialMedia {
-  background-color: rgb(123, 126, 156);
-  padding: 2.5rem 5rem;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-}
-
-.socialMedia hr {
-  width: 32%;
-  height: 1px;
-  background-color: #555;
-  border: none;
-  display: inline-block;
-}
-
-.socialMedia section {
-  display: flex;
-  align-items: center;
-  gap: 1.875rem;
-}
-
-.socialMedia img {
-  width: 3.125rem;
+aside img[src="images/beautyAnimation.gif"] {
+  width: 100%;
+  max-width: 100%;
 }
 
 footer {
   background-color: #15164b;
   color: #e6e7ed;
   font-size: .8em;
-  font-style: italic;
   text-align: center;
+}
+
+.socialMedia {
+  background-color: rgb(123, 126, 156);
+  padding: 1.4rem 3rem;
+}
+
+.socialMedia hr {
+  display: none;
+}
+
+.socialMedia section {
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  justify-content: space-evenly;
+}
+
+.socialMedia img {
+  width: 3rem;
+}
+
+.footerContent {
+  background: url(../images/LogoLastFrontier_white.png) no-repeat .625rem .625rem;
+  background-size: 22%;
+  padding-bottom: .5rem;
+  padding-left: 4rem;
+}
+
+#contact {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 footer a:link, footer a:visited {
   color: #e6e7ed;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 48rem) {
+  header {
+    background-size: 13rem;
+    height: 9rem;
+  }
+
+  #topNav {
+    font-size: 1rem;
+  }
+
+  main h2 {
+    font-size: 2.8rem;
+    text-align: left;
+    text-indent: 10%;
+  }
+
+  main > p {
+    padding: 0 2.75rem;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  [id="mainContent"] h3 {
+    font-size: 1.6em;
+  }
+
+  [id="mainContent"] .content p {
+    font-size: 1rem;
+  }
+
+  .footerContent {
+    background-size: 10rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  header {
+    padding: .625rem .875rem;
+    background-position: .625rem .875rem;
+    background-size: 16rem;
+    height: 6.6rem;
+  }
+
+  #topNav {
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1rem;
+    width: 75%;
+    right: 0;
+    bottom: .7rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'bannerArea bannerArea bannerArea'
+      'h2Area h2Area h2Area'
+      'descriptionArea descriptionArea descriptionArea'
+      'mainContentArea mainContentArea mainContentArea';
+    margin-top: 0;
+  }
+
+  main > div {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    grid-area: bannerArea;
+  }
+
+  main > div::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-image: url(../images/DiscoverJuneau_big.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -1rem 60%;
+    opacity: 60%;
+  }
+
+  main > div img {
+    width: 82%;
+    position: relative;
+  }
+
+  main h2 {
+    font-size: 3.2rem;
+    text-align: left;
+    grid-area: h2Area;
+  }
+
+  main > p {
+    padding: 0 8.75rem;
+    font-size: 1.3rem;
+    grid-area: descriptionArea;
+  }
+
+  #mainContent {
+    padding: 3.75rem 3rem;
+    margin: 0 auto;
+    grid-area: mainContentArea;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #mainContent > article {
+    padding: 0 2.5rem;
+    margin: 0 auto;
+  }
+
+  #topic1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  #topic2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  #topic3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  #mainContent > article:nth-child(2) {
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+  }
+
+  #mainContent h3 {
+    text-align: left;
+  }
+
+  footer {
+    text-align: left;
+  }
+
+  .socialMedia {
+    padding: 1.4rem 5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .socialMedia {
+    padding: 1.4rem 5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .socialMedia hr {
+    width: 25%;
+    height: 1px;
+    background-color: #555;
+    border: none;
+    display: inline-block;
+  }
+
+  .socialMedia img {
+    width: 3.125rem;
+  }
+
+  .footerContent {
+    background-size: 14rem;
+    height: 7rem;
+  }
+
+  #contact {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footerContent nav {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  footer a:hover {
+    color: #fff;
+  }
 }

@@ -9,24 +9,23 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1><span>The</span><br> Last Frontier</h1>
+      <nav id="topNav">
+        <ul>
+          <li><a href="attractions.html">What To Do</a></li>
+          <li><a href="explore.html">How To Explore</a></li>
+          <li><a href="stay.html">Where To Stay</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav id="topNav">
-      <ul>
-        <li>Home</li>
-        <li><a href="attractions.html">What To Do</a></li>
-        <li><a href="explore.html">How To Explore</a></li>
-        <li><a href="lodging.html">Where To Stay</a></li>
-      </ul>
-    </nav>
-    <main>
+   <main>
       <div>
-        <img src="images/Discover_Juneau_1200x800.jpg" alt="Juneau, Alaska from Douglas Island">
+        <img srcset="images/Discover_Juneau_600x400.jpg 700w, images/Discover_Juneau_1200x800.jpg 1000w" sizes="(max-width: 47.9375rem) 80vw, (min-width: 60rem) 100vw" src="images/Discover_Juneau_1200x800.jpg" alt="Juneau, Alaska from Douglas Island">
+        <!-- widthDescriptorValue / (screenWidth * viewportWidth%) -->
       </div>
       <h2>History</h2>
       <p>Juneau is more than stunning views, imposing mountains, and running blue waters. This is a city full of history that spans for centuries before colonization and the Gold Rush which gave it its name and legacy. It's a city with character and personality, and arguably deserves the status of “heart of Alaskan culture”. You will feel this in the city year-round, and experience it in the people, landscape and wonders of Alaska!</p>
       <section id="mainContent">
-        <article class="topics">
+        <article class="topics" id="topic1">
           <img src="images/Totem.jpg" alt="Alaskan Native Totem" class="articleImage">
           <h3>The People</h3>
           <div class="content">
@@ -36,7 +35,7 @@
             <p>They built shelters along the coast in such a way that the entrances were always facing the sea. Each house had a Totem Pole placed in front of it. The totem poles signified the origins of the family living inside the house.</p>
           </div>
         </article>
-        <article class="topics">
+        <article class="topics" id="topic2">
           <img src="images/BasinRoad.jpg" alt="Basin Road, Juneau, Alaska" class="articleImage">
           <h3>The Landscape</h3>
           <div class="content">
@@ -46,7 +45,7 @@
             <p>This amazing city is bestled between mountain ranges decorated with beautiful green pine trees and rugged snowcapped mountains.</p>
           </div>
         </article>
-        <article class="topics">
+        <article class="topics" id="topic3">
           <img src="images/JuneauNightline.jpg" alt="Juneau, Alaska at night" class="articleImage">
           <h3>The Industry</h3>
           <div class="content">
@@ -73,14 +72,17 @@
         </section>
         <hr>
       </nav>
-      <h1><span>The</span><br> Last Frontier</h1>
-      Copyright &copy; 2024 The Last Frontier<br>
-      <a href="mailto:drehbein@student.cvtc.edu">drehbein@student.cvtc.edu</a><br><br>
-      <nav>
-        <a href="#">Legal Stuff</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">Security</a>
-      </nav>
+      <section class="footerContent">
+        <div id="contact">
+          Copyright &copy; 2024 The Last Frontier<br>
+          <a href="mailto:drehbein@student.cvtc.edu">drehbein@student.cvtc.edu</a>
+        </div> 
+        <nav>
+          <a href="#">Legal Stuff</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#">Security</a>
+        </nav>
+      </section>
     </footer>
   </div>
 </body>

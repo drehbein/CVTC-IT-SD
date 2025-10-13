@@ -10,19 +10,18 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1><span>The</span><br> Last Frontier</h1>
+      <nav id="topNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">What To Do</a></li>
+          <li><a href="stay.html">Where To Stay</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav id="topNav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="attractions.html">What To Do</a></li>
-        <li>How To Explore</li>
-        <li><a href="lodging.html">Where To Stay</a></li>
-      </ul>
-    </nav>
     <main>
       <div>
-        <img src="images/Discover_Juneau_1200x800.jpg" alt="Juneau, Alaska from Douglas Island">
+        <img srcset="images/Discover_Juneau_600x400.jpg 700w, images/Discover_Juneau_1200x800.jpg 1000w" sizes="(max-width: 47.9375rem) 80vw, (min-width: 60rem) 100vw" src="images/Discover_Juneau_1200x800.jpg" alt="Juneau, Alaska from Douglas Island">
+        <!-- widthDescriptorValue / (screenWidth * viewportWidth%) -->
       </div>
       <h2>Alaska Adventures</h2>
       <p>There are many places to go and explore on your own, but Juneau offers a variety of adventures off the beaten path. There are many established tour guide companies that will provide just about any tour you can imagine, from helicopter tours on Mendenhall Glacier, to whale watching in the bay.</p>
@@ -72,14 +71,17 @@
         </section>
         <hr>
       </nav>
-      <h1><span>The</span><br> Last Frontier</h1>
-        Copyright &copy; 2024 The Last Frontier<br>
-      <a href="mailto:drehbein@student.cvtc.edu">drehbein@student.cvtc.edu</a><br><br>
-      <nav>
-        <a href="#">Legal Stuff</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="#">Security</a>
-      </nav>
+      <section class="footerContent">
+        <div id="contact">
+          Copyright &copy; 2024 The Last Frontier<br>
+          <a href="mailto:drehbein@student.cvtc.edu">drehbein@student.cvtc.edu</a>
+        </div>
+        <nav>
+          <a href="#">Legal Stuff</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+          <a href="#">Security</a>
+        </nav>
+      </section>
     </footer>
   </div>
 </body>
