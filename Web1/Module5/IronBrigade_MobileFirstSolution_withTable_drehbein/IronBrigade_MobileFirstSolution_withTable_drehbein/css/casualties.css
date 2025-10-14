@@ -48,3 +48,53 @@ tfoot > tr {
 main > .about a {
   margin-top: 2rem;
 }
+
+@media screen and (min-width: 48rem) {
+  thead th,
+  tbody td {
+    font-size: .8rem;
+  }
+
+  tfoot > tr {
+    font-size: .7rem;
+  }
+
+  main > .about > aside {
+    display: block;
+    width: 46%;
+    font-size: .6rem;
+    text-align: right;
+    background-color: #d5d5f8;
+    box-shadow: 1px 1px 2px #444;
+    padding-right: .2rem;
+    padding-bottom: .4rem;
+    position: absolute;
+    top: 2.6rem;
+    left: .4rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .about table {
+    border-spacing: .14rem;
+  }
+
+  .about caption,
+  tfoot tr {
+    font-size: .8rem;
+  }
+
+  head th,
+  tbody td {
+    font-size: 1rem;
+  }
+
+  main > .about > aside {
+    width: 50%;
+    font-size: .8rem;
+    top: 3.1rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+}
