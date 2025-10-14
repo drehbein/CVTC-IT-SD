@@ -26,6 +26,32 @@
       <h2>Lodging in Juneau</h2>
       <p>Part of the traveling experience is finding good lodging! Finding this will take some research, but it can be done. Juneau had some unique lodging opportunities in the historic downtown area including the famous Baranof Hotel, and there are VRBO and Airbnb rentals in Juneau and across the channel on Douglas Island. Douglas is quickly accessible to Juneau and all the exciting adventures of the area.</p>
       <section id="mainContent">
+        <div class="formInfo">
+          <p id="lodgingInfo">For more lodging information, submit the following form:<br><span class="required">*All fields required!</span></p>
+        </div>
+        <form action="">
+          <label for="customerName">Name</label>
+          <input type="text" id="customerName" name="customerName" placeholder="firstname lastname" required><br>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="username@gmail.com" required><br>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="555-122-7700" required><br>
+
+          <label for="rangeAmount">$ Cost</label>
+          <select name="rangeAmount" id="rangeAmount" required>
+            <option value="1">$100 - $199</option>
+            <option value="2">$200 - $299</option>
+            <option value="3">$300 - $399</option>
+            <option value="4">$400 or greater</option>
+          </select><br>
+
+          <label for="guests">Guests</label>
+          <input type="number" id="guests" name="guests" placeholder="# of guests" required><br>
+
+          <input type="submit" value="Submit" name="Go">
+        </form>
         <table>
           <thead>
             <tr>
@@ -37,50 +63,47 @@
           </thead>
           <tbody>
             <tr>
-              <td>Baranof Downtown<br>127 N Frankin St<br>855-516-1090</td>
-              <td><img src="images/Red_Checkmark.png" alt="Red checkmark"></td>
+              <td class="siteInfo">
+                Baranof Downtown<br>
+                127 N Frankin St<br>
+                855-516-1090
+              </td>
+              <td><img src="images/Red_Checkmark.png" alt="Located in Juneau"></td>
               <td></td>
               <td>4.8 / 5</td>
             </tr>
             <tr>
-              <td>Juneau Hotel<br>1200 W 9th Street<br>555-122-7700</td>
-              <td><img src="images/Red_Checkmark.png" alt="Red checkmark"></td>
+              <td class="siteInfo">
+                Juneau Hotel<br>
+                1200 W 9th Street<br>
+                555-122-7700
+              </td>
+              <td><img src="images/Red_Checkmark.png" alt="Located in Juneau"></td>
               <td></td>
               <td>4 / 5</td>
             </tr>
             <tr>
-              <td>Super 8 Motel<br>555 Mendenhall Way<br>555-122-7700</td>
-              <td><img src="images/Red_Checkmark.png" alt="Red checkmark"></td>
+              <td class="siteInfo">
+                Super 8 Motel<br>
+                555 Mendenhall Way<br>
+                555-122-7700
+              </td>
+              <td><img src="images/Red_Checkmark.png" alt="Located in Juneau"></td>
               <td></td>
               <td>3.5 / 5</td>
             </tr>
             <tr>
-              <td>Auke Bay Chalet (VRBO)<br>2100 Blueberry Lane<br>555-122-7700</td>
+              <td class="siteInfo">
+                Auke Bay Chalet (VRBO)<br>
+                2100 Blueberry Lane<br>
+                555-122-7700
+              </td>
               <td></td>
-              <td><img src="images/Red_Checkmark.png" alt="Red checkmark"></td>
+              <td><img src="images/Red_Checkmark.png" alt="Located in Douglas"></td>
               <td>4.9 / 5</td>
             </tr>
           </tbody>
         </table>
-        <p>For more lodging information, submit the following form:<br><span>*All fields required!</span></p>
-        <form action="#">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="firstname lastname"><br>
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="username@gmail.com"><br>
-          <label for="phone">Phone</label>
-          <input type="text" id="phone" name="phone" placeholder="555-122-7700"><br>
-          <label for="selectedCost">$ Cost</label>
-          <select name="cost" id="selectedCost">
-            <option value="">-- Please select an option --</option>
-            <option value="$0 - $99">$0 - $99</option>
-            <option value="$100 - $199" selected>$100 - $199</option>
-            <option value="$200 +">$200 +</option>
-          </select><br>
-          <label for="guests">Guests</label>
-          <input type="text" id="guests" name="guests" placeholder="# of guests"><br>
-          <input type="submit" value="Submit">
-        </form>
       </section>
     </main>
     <aside>
@@ -102,7 +125,7 @@
         <div id="contact">
           Copyright &copy; 2024 The Last Frontier<br>
           <a href="mailto:drehbein@student.cvtc.edu">drehbein@student.cvtc.edu</a>
-        </div> 
+        </div>
         <nav>
           <a href="#">Legal Stuff</a>&nbsp;&nbsp;|&nbsp;&nbsp;
           <a href="#">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;

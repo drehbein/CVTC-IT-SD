@@ -1,100 +1,49 @@
-#mainContent > table {
-  width: 100%;
-  border-collapse: collapse;
+#mainContent {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0;
+}
+
+#mainContent .required,
+#mainContent #form {
+  grid-row: 2 / 3;
+}
+
+#lodgingInfo {
+  font-size: 90%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.required {
+  color: rgb(173, 5, 5);
+  font-size: 80%;
+}
+
+form {
   text-align: center;
 }
 
-#mainContent > table th {
-  border: 1px solid #999999;
-  padding: 1rem;
-}
-
-#mainContent > table > thead > tr > th:first-child {
-  text-align: left;
-  color: #3579b9;
-}
-
-#mainContent > table td {
-  border: 1px solid #999999;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-#mainContent > table td img {
-  width: 35%;
-}
-
-#mainContent > p {
-  text-align: center;
-  margin: 3rem auto 0;
-}
-
-#mainContent > p > span {
-  color: #b0242b;
-  font-size: 0.8rem;
-}
-
-#mainContent > form {
-  padding: 1.5rem 2rem 1rem;
-  text-align: center;
-}
-
-#mainContent > form > * {
-  margin-bottom: 1rem;
-}
-
-#mainContent > form > label {
+label {
   text-transform: uppercase;
 }
 
-#mainContent > form > input {
-  background-color: #cccccc;
-}
-
-#mainContent > form > input[type="text"],
-#mainContent > form > select {
-  box-sizing: content-box;
-  width: 80%;
+input, select {
   border: 2px solid #649bce;
-  height: 1.5rem;
-  background-color: #cccccc;
-  padding: .25rem 0 .25rem .25rem;
+  background-color: transparent;
+  height: 1.8rem;
+  width: 70%;
+  margin-top: 1rem;
+  display: inline-block;
 }
 
-#mainContent > form > input[type="submit"] {
-  border: 3px solid #5389bb;
-  border-radius: 6px;
+select {
+  height: 2rem;
+}
+
+input[type="submit"] {
   width: 30%;
-}
-
-@media screen and (min-width: 48rem) {
-  #mainContent > table th {
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 64rem) {
-  #mainContent {
-    display: grid;
-    grid-template-columns: 4fr 5fr;
-    grid-template-areas:
-      'formIntro table'
-      'form table';
-    column-gap: 2rem;
-  }
-
-  #mainContent > table {
-    grid-area: table;
-  }
-
-  #mainContent > p {
-    grid-area: formIntro;
-    font-size: 0.8em;
-    margin: 0 auto 0;
-  }
-
-  #mainContent > form {
-    grid-area: form;
-    padding: 1.5rem 0 1rem;
-  }
+  border: 3px solid #5389bb;
+  border-radius: .625rem;
+  margin: 1rem auto;
 }
