@@ -1,0 +1,75 @@
+label,
+input,
+textarea,
+select,
+.ironBrigadeText {
+  margin-left: 3rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  width: 80%;
+  padding-right: .625rem;
+}
+
+label > span {
+  color: #771212;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input {
+  height: 1.5rem;
+}
+
+textarea {
+  width: 80%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.relatedText {
+  position: relative;
+  top: -.4rem;
+}
+
+#Go {
+  margin-left: 2rem;
+  font-size: 1rem;
+  padding: .2rem;
+  height: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  label > span {
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  #Go {
+    margin: 0 0 2rem 3rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  main > .soldierPic {
+    position: relative;
+    top: 4rem;
+    left: 1rem;
+  }
+
+  #secondWI {
+    transform: scale(1.3);
+  }
+}

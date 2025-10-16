@@ -132,7 +132,8 @@ main > .about {
   position: relative;
 }
 
-main > .about h2 {
+main > .about h2,
+.feedbackForm h2 {
   color: #660000;
   font-size: .9em;
   font-weight: 600;
@@ -293,7 +294,8 @@ main > .feedbackForm a:hover {
     width: 60%;
   }
 
-  main > .about h2 {
+  main > .about h2,
+  .feedbackForm h2 {
     font-size: 1.3em;
     font-weight: normal;
   }
@@ -355,7 +357,8 @@ main > .feedbackForm a:hover {
     top: .225em;
   }
 
-  main > .about h2 {
+  main > .about h2,
+  .feedbackForm h2 {
     font-size: 1.7em;
   }
 
@@ -420,7 +423,8 @@ main > .feedbackForm a:hover {
     width: 12.625em;
   }
 
-  main > .about h2 {
+  main > .about h2,
+  .feedbackForm h2 {
     font-size: 2em;
   }
 

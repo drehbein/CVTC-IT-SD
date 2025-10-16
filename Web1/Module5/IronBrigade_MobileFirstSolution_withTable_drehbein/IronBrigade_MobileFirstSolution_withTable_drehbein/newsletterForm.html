@@ -48,7 +48,76 @@
           <h2>Sign up for the Iron Brigade Newsletter</h2>
           <br>
 
-          <form action="https://itsd.cvtc.edu/web1/contact.php" method="post"></form>
+          <form action="https://itsd.cvtc.edu/web1/contact.php" method="post">
+            <label for="myName"><span>*</span>Name</label>
+            <input type="text" name="myName" id="myName" required value="Fred">
+            <br> 
+
+            <label for="myEmail"><span>*</span>Name</label>
+            <input type="email" name="myEmail" id="myEmail" required placeholder="username@student.cvtc.edu">
+            <br>
+
+            <label for="myDate">Start Date</label>
+            <input type="date" name="myDate" id="myDate">
+            <br>
+
+            <label for="myInterests">Areas of Interest</label>
+            <textarea name="myInterests" id="myInterests" cols="40" rows="4">American Civil War&#013;American Revolution&#013;War of 1812&#013;Vietnam&#013;The Great Emu War</textarea>
+            <br>
+
+            <!-- Checkboxes -->
+
+            <span class="ironBrigadeText">Iron Brigade Regiments</span><br>
+
+            <input type="checkbox" name="2ndWI" id="2ndWI" value="yes">
+            <span class="relatedText">2nd WI</span><br>
+
+            <input type="checkbox" name="6thWI" id="6thWI" value="yes" checked>
+            <span class="relatedText">6th WI</span><br>
+
+            <input type="checkbox" name="7thWI" id="7thWI" value="yes">
+            <span class="relatedText">7th WI</span><br>
+
+            <input type="checkbox" name="19thIN" id="19thIN" value="yes">
+            <span class="relatedText">19th IN</span><br>
+
+            <input type="checkbox" name="24thMI" id="24thMI" value="yes">
+            <span class="relatedText">24th MI</span><br><br>
+
+            <!-- Radio Buttons -->
+
+            <span class="ironBrigadeText">Iron Brigade Regiments</span><br>
+
+            <input type="radio" name="2ndWI" class="regiment" value="yes">
+            <span class="relatedText">2nd WI</span><br>
+
+            <input type="radio" name="6thWI" class="regiment" value="yes" checked>
+            <span class="relatedText">6th WI</span><br>
+
+            <input type="radio" name="7thWI" class="regiment" value="yes">
+            <span class="relatedText">7th WI</span><br>
+
+            <input type="radio" name="19thIN" class="regiment" value="yes">
+            <span class="relatedText">19th IN</span><br>
+
+            <input type="radio" name="24thMI" class="regiment" value="yes">
+            <span class="relatedText">24th MI</span><br><br>
+
+            <!-- Selection Dropdown -->
+            <label for="soldierNames">Common Civil War Soldier First Names</label><br>
+            <select name="soldierNames[]" id="soldierNames" multiple size="4">
+              <option value="Abe">Abraham</option>
+              <option value="Neze">Ebenezer</option>
+              <option value="Gerty">Gertrude</option>
+              <option value="Ram">Ephram</option>
+              <option value="Franky">Frankford</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" name="Go" id="Go" value="Apply Now">
+
+          </form>
 
           <br>
           <a href="index.html" style="margin-left: 5px;">Bivouac...</a>          <a href="casualties.html">Casualties...</a>
